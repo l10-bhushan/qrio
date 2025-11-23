@@ -41,7 +41,7 @@ export default function WaitListForm() {
         Join Waitlist
       </button>
     </motion.form>
-    {status && <p className="mt-4 text-lg">{status}</p>}
+    {status && <p className="mt-4 text-lg text-gray-900 font-bold">{status}</p>}
     </div>
   );
 }

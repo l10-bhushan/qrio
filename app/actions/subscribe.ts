@@ -34,8 +34,8 @@ export async function subscribe(email: string) {
   const { error } = await supabase.from("waitlist").insert({ email });
 
   if (error) {
-    return { success: false, message: "Failed to add to waitlist!" };
+    return { success: false, message: "Sorry 😩 we failed to add you to waitlist! Please reach out to bhushan.rajput.l1odevs@gmail.com" };
   }
 
-  return { success: true, message: "Added to waitlist!" };
+  return { success: true, message: "Congratulations! you've been added to the waitlist 🥳" };
 }
